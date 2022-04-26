@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="444.0" prefWidth="740.0" style="-fx-background-color: #14162B;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller.Window.MontantParBanqueCtrl">
+    <children>
+        <TableView fx:id="TBanque" layoutX="13.0" layoutY="44.0" onMouseClicked="#rowClicked" prefHeight="354.0" prefWidth="714.0" stylesheets="@../../../Css/app.css">
+            <columns>
+                <TableColumn prefWidth="94.0" text="Client" />
+            <TableColumn prefWidth="94.0" text="Taux" />
+                <TableColumn prefWidth="158.0" text="Effectif" />
+                <TableColumn prefWidth="158.0" text="Total Pret" />
+                <TableColumn prefWidth="75.0" text="Total e Payer" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+        <Button fx:id="btnPrev" layoutX="14.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnPrevHandle" prefHeight="14.0" prefWidth="47.0" stylesheets="@../../../Css/app.css">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assert/icon/prev_64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Button fx:id="btnNext" layoutX="208.0" layoutY="407.0" mnemonicParsing="false" onAction="#btnNextHandle" prefHeight="14.0" prefWidth="47.0" stylesheets="@../../../Css/app.css">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Assert/icon/next_64.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+        <Label fx:id="Lpages" alignment="CENTER" contentDisplay="CENTER" layoutX="58.0" layoutY="409.0" prefHeight="25.0" prefWidth="150.0" stylesheets="@../../../Css/app.css" text="N°pages" />
+      <Pane fx:id="paneSearchDate" layoutX="12.0" layoutY="2.0" prefHeight="40.0" prefWidth="714.0" />
+    </children>
+</AnchorPane>

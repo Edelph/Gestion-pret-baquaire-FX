@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="538.0" prefWidth="913.0" style="-fx-background-color: #4D6E9B;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main.Controller.MainWindow">
+   <children>
+      <Pane prefHeight="538.0" prefWidth="172.0" style="-fx-background-color: #14162B;">
+         <children>
+            <VBox layoutX="1.0" layoutY="142.0" prefHeight="223.0" prefWidth="171.0">
+               <children>
+                  <Button fx:id="menuClient" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#menuClientHandle" prefHeight="48.0" prefWidth="199.0" styleClass="menuLeft" stylesheets="@../../Css/app.css" text="Client" textFill="#2f0024">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_management_64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuBanque" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#menubanqueHandle" prefHeight="48.0" prefWidth="177.0" styleClass="menuLeft" stylesheets="@../../Css/app.css" text="Banque" textFill="#2f0024">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_bank_building_64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuPret" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="58.0" mnemonicParsing="false" onAction="#menuPretHandle" prefHeight="40.0" prefWidth="186.0" styleClass="menuLeft" stylesheets="@../../Css/app.css" text=" Pret" textFill="#2f0024">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_money_bag_64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuSary" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="183.0" mnemonicParsing="false" onAction="#menuSaryHandle" prefHeight="44.0" prefWidth="235.0" styleClass="menuLeft" stylesheets="@../../Css/app.css" text="Chart" textFill="#2f0024">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_bill_32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="menuParams" alignment="BOTTOM_LEFT" layoutX="10.0" layoutY="203.0" mnemonicParsing="false" onAction="#menuParamsHandle" prefHeight="44.0" prefWidth="235.0" styleClass="menuLeft" stylesheets="@../../Css/app.css" text="Parametre" textFill="#2f0024">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_settings_64.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Pane layoutY="77.0" prefHeight="17.0" prefWidth="172.0" style="-fx-background-color: #E42022;" />
+            <ImageView fitHeight="58.0" fitWidth="105.0" layoutX="57.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Assert/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <StackPane layoutX="170.0" layoutY="-1.0">
+         <children>
+            <Pane fx:id="paneTitle" prefHeight="77.0" prefWidth="757.0" style="-fx-background-color: #14162B;" stylesheets="@../../Css/app.css">
+               <children>
+                  <Label fx:id="title" alignment="CENTER" layoutX="164.0" prefHeight="79.0" prefWidth="387.0" styleClass="h1" text="BIENVENU" textFill="#e42022">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnClose" layoutX="724.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btnCloseHandle" onMouseEntered="#btnCloseEntered" onMouseExited="#btnCloseExited" prefHeight="30.0" prefWidth="33.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="closeIcon" fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_Close_32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane fx:id="paneTitrePre" prefHeight="77.0" prefWidth="736.0" style="-fx-background-color: #14162B;">
+               <children>
+                  <Label fx:id="topMenuPre" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="24.0" onMouseEntered="#menuTopMouseEnter" onMouseExited="#menuTopMouseExit" onMousePressed="#pretPressed" prefHeight="30.0" prefWidth="144.0" styleClass="menuTop" stylesheets="@../../Css/app.css" text="PRET" textAlignment="CENTER" textFill="WHITE" />
+                  <Label fx:id="topMenuMontant" alignment="CENTER" contentDisplay="CENTER" layoutX="246.0" layoutY="24.0" onMouseEntered="#menuTopMouseEnter" onMouseExited="#menuTopMouseExit" onMousePressed="#montantPressed" prefHeight="30.0" prefWidth="277.0" styleClass="menuTop" stylesheets="@../../Css/app.css" text="EFFECTIF ET MONTANT TOTAL DES PRET" textAlignment="CENTER" textFill="WHITE" />
+                  <Label fx:id="topMenuListePret" alignment="CENTER" contentDisplay="CENTER" layoutX="561.0" layoutY="24.0" onMouseEntered="#menuTopMouseEnter" onMouseExited="#menuTopMouseExit" onMousePressed="#listPretPressed" prefHeight="30.0" prefWidth="144.0" styleClass="menuTop" stylesheets="@../../Css/app.css" text="LISTE DES PRETS" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="btnClose1" layoutX="724.0" layoutY="-1.0" mnemonicParsing="false" onAction="#btnCloseHandle" onMouseEntered="#btnCloseEntered" onMouseExited="#btnCloseExited" prefHeight="30.0" prefWidth="38.0" style="-fx-background-color: none;">
+                     <graphic>
+                        <ImageView fx:id="closeIcon1" fitHeight="22.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Assert/icon/icons8_Close_32.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </StackPane>
+      <Pane layoutX="188.0" layoutY="91.0" prefHeight="444.0" prefWidth="739.0" style="-fx-background-color: #14162B;">
+         <children>
+            <StackPane fx:id="stackPaneWindow" layoutX="-6.0" layoutY="-1.0" />
+         </children></Pane>
+   </children>
+</AnchorPane>
